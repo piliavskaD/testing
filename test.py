@@ -9,5 +9,5 @@ while True:
     else:
       print("repeat")
 
-#dd = ff(a)
+
 print(ff(a))
