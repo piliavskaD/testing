@@ -1,11 +1,14 @@
 import math
 
-def ff(d1, d2):
-    if d1 > 10 and d2 > 10:
-        return "nnn"
+def ppl(a):
+    f = int(str(a)[0])
+    s = int(str(a)[1])
+    t = int(str(a)[2])
+    fr = int(str(a)[3])
+    if f * s * t * fr >= 0:
+        return math.sqrt(f * s * t * fr)
     else:
-        return 0.5 * d1 * d2
-
-d1 = int(input("d1 = "))
-d2 = int(input("d2 = "))
-print(ff(d1, d2))
+        return "err"
+    
+a = int(input("a ="))
+print(ppl(a))
